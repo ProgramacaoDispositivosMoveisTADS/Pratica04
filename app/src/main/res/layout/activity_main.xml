@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout  android:layout_width="match_parent"
+        android:layout_height="wrap_content"  android:orientation="horizontal" >
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/edit_prefname"
+            android:text="PrefName"
+           />
+
+        <!-- Adicionando o atributo android:onClick -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:onClick ="buttonSaveClick"
+
+            />
+        />
+
+    </LinearLayout>
+    <LinearLayout  android:layout_width="match_parent"
+        android:layout_height="wrap_content"  android:orientation="horizontal" >
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="PrefValue"
+            android:id="@+id/edit_prefvalue"
+            />
+
+        <!-- Adicionando o atributo android:onClick -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/read"
+            android:onClick ="buttonReadClick"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout  android:layout_width="match_parent"
+        android:layout_height="wrap_content"  android:orientation="horizontal" >
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save to file"
+            android:id="@+id/checkbox_savetofile" />
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
